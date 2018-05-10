@@ -5,14 +5,13 @@ jdk:
   - openjdk8
   - openjdk9 
   - oraclejdk8
-  - oraclejdk9
- 
+  - oraclejdk10
+
 build:
 
   ci:
     - java -version
     - echo $SHIPPABLE_JDK_VERSION
-   # - mvn --version    
-   # - ant -version 
-   # - gradle --version 
- 
+    - mvn --version    
+    - ant -version 
+    - gradle --version
